@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite" verbose="3" parallel="tests" thread-count="2" group-by-instances="true">
+    <test name="SearchTests" group-by-instances="true">
+        <parameter name="browser" value="EDGE"/>
+        <classes>
+            <class name="org.opi.tests.SearchTests"/>
+        </classes>
+    </test>
+    <test name="LoginFailedTest">
+        <parameter name="browser" value="EDGE"/>
+        <classes>
+            <class name="org.opi.tests.LoginFailedTest"/>
+        </classes>
+    </test>
+    <test name="LoginFailedTest1">
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="org.opi.tests.LoginFailedTest"/>
+        </classes>
+    </test>
+</suite>
